@@ -15,8 +15,8 @@ class EmailController extends BaseController
         foreach($lines as $line)
         {
             $tokens = array_merge($tokens, preg_split("/\s+/", $line));
-            usleep(rand(100000, 500000));
         }
+        usleep(500000);
 
         $first = array_rand($tokens, 1);
         $second = array_rand($tokens, 1);
