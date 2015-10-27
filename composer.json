@@ -1,0 +1,6 @@
+{
+        "require": {
+                "rybakit/phive-queue": "0.10.*",
+                "guzzlehttp/guzzle": "~6.0"
+        }
+}
