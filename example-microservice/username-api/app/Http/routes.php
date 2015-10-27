@@ -12,5 +12,10 @@
 */
 
 $app->get('/', function () use ($app) {
-    return $app->welcome();
+    return '';
 });
+
+$app->get('/generate-username', function () use ($app) {
+    return 'foo';
+});
+$app->post('/generate-username', 'UsernameController@generateUsername');
